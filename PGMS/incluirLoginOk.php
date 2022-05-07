@@ -26,6 +26,6 @@ if(count($retorno) > 0){
     header('Location: telaPrincipal.php');
 }else{
     $_SESSION['userLogado'] = false;
-    header('Location: loguin.php?msg=Usuário senha invalidos');
+    header('Location: login.php?msg=Usuário senha invalidos');
 }
 

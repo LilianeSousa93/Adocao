@@ -1,7 +1,7 @@
 <?php
 
 if($_SESSION['userLogado']){
-    header('Location: loguin.php');
+    header('Location: login.php');
 }
 
 ?>

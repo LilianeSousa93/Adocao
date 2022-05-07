@@ -3,7 +3,7 @@
 session_start();
 
 if(!$_SESSION['userLogado']){
-    header('Location: loguin.php');
+    header('Location: login.php');
 }else{
     //Trazendo animais cadastrados
 

@@ -1,8 +1,11 @@
 <Project Sdk="Devsense.Php.Sdk">
   <PropertyGroup Label="Globals">
-    <ProjectGuid>6b4fd415-2669-4a3e-8487-f3af53977a83</ProjectGuid>
+    <ProjectGuid>b15889f9-f47e-4813-a049-e4de97232b9e</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
     <EnvName>PHPDev</EnvName>
+    <RootNamespace>Adocao</RootNamespace>
+    <WebRoot />
+    <RuntimeVersion>8.0</RuntimeVersion>
   </PropertyGroup>
 </Project>
