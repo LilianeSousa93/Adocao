@@ -38,7 +38,8 @@ if(!$_SESSION['userLogado']){
 
             <?php if($_SESSION['userPerfil'] == 'Admin') : ?>
             <div class="col-md-12 mb-2">
-                <a href="cadastroNovoUsuario.php" class="btn btn-primary">Cadastrar usuário</a>
+                <a href="gerenciarUsuario.php" class="btn btn-primary">Gerenciar usuário</a>
+                <a href="cadastrarAnimal.php" class="btn btn-primary">Cadastrar animal</a>
             </div>
             <?php endif; ?>
 

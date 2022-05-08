@@ -74,53 +74,10 @@ if($_SESSION['userLogado']){
             </div>
             <div class="card-footer">
                 <button type="submit" class="btn btn-primary">Cadastro</button>
+                <a href="gerenciarUsuario.php" class="btn btn-primary float-md-right"><i class="fas fa-arrow-circle-left"></i> Voltar</a>
             </div>
         </form>
     </div>
-
-
-    <!--<h1>Viralata:Sistema de adoção de Animais</h1>
-    <h2>Cadastro de Pessoa Física</h2>
-<form action="IncluirNovoUsuarioOk.php" method="post">
-<label for="nome">Nome*:</label>
-<input type="text" class="form-control" id="nome" placeholder="nome" name="nome">
-<br><br>
-<label for="cpf">CPF:</label>
-<input type="text" class="form-control" id="cpf" placeholder="cpf" name="cpf">
-<br><br>
-<label for="rg">RG*:</label>
-<input type="text" class="form-control" id="rg" placeholder="rg" name="rg">
-<br><br>
-<label for="Data Nascimento">Data Nascimento*:</label>
-<input type="text" class="form-control" id="dtnascimento" placeholder="Data de Nascimento" name="dtnascimento">
-<br><br>
-<label for="telcelular">Telefone Celular*:</label>
-<input type="text" class="form-control" id="telcelular" placeholder="Telefone Celular" name="telcelular">
-<br><br>
-<label for="cep">CEP:</label>
-<input type="text" class="form-control" id="cep" placeholder="Cep" name="cep">
-<br><br>
-<label for="rua">Rua:</label>
-<input type="text" class="form-control" id="rua" placeholder="Rua" name="rua">
-<br><br>
-<label for="numero">Numero:</label>
-<input type="text" class="form-control" id="numero" placeholder="Número" name="numero">
-<br><br>
-<label for="complemento">Complemento:</label>
-<input type="text" class="form-control" id="complemento" placeholder="complemento" name="complemento">
-<br><br>
-<label for="bairro">Bairro:</label>
-<input type="text" class="form-control" id="bairro" placeholder="bairro" name="bairro">
-<br><br>
-<br><br><label for="E-mail">E-mail*:</label>
-<input type="text" class="form-control" id="email" placeholder="E-mail" name="email">
-<br><br>
-<label for="senha">Senha*:</label>
-<input type="password" class="form-control" id="pwd" placeholder="senha" name="senha">
-<br><br>
-<button type="submit">Realizar Cadastro</button>
-    </form>-->
-
 
 </body>
 </html>
