@@ -26,8 +26,6 @@ SET time_zone = "+00:00";
 --
 -- Estrutura da tabela `novousuario`
 --
-select * from usuario
-
 
 CREATE TABLE `usuario` (
   `id` int(11) NOT NULL primary key auto_increment,
