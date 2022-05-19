@@ -1,0 +1,466 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMDPejAY0VgEtxMG3d88wXc",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LilianeSousa93/Adocao/blob/main/Programas%20em%20Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GbeFeBnrONTn",
+        "outputId": "69f73044-4fc8-4779-bc50-a8fad49e9bca"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite seu nome: \n",
+            "Liliane leite Sousa\n",
+            "Digite sua idade: \n",
+            "29\n",
+            "Digite seu peso: \n",
+            "58\n",
+            "Hello world\n",
+            "\n",
+            "Nome: Liliane leite Sousa,idade: 29,peso: 58.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "#entrada de dados\n",
+        "nome=str(input('Digite seu nome: \\n'))\n",
+        "idade=int(input('Digite sua idade: \\n'))\n",
+        "peso=float(input('Digite seu peso: \\n'))\n",
+        "#impressão de resultado\n",
+        "print('Hello world\\n')\n",
+        "print(f'Nome: {nome},idade: {idade},peso: {peso}')\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1=float(input('Digite o número 1 \\n'))\n",
+        "n2=float(input('Digite o número 2 \\n'))\n",
+        "\n",
+        "#operações aritméticas\n",
+        "print(f'A soma dos números é {n1+n2:.2f}')\n",
+        "print(f'A subtração dos números é {n1-n2:.2f}')\n",
+        "print(f'A multiplicação dos números é {n1*n2:.2f}')\n",
+        "print(f'A divisão dos números é {n1/n2:.2f}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l65MtQzxUqLo",
+        "outputId": "ab506e0b-5f2e-434e-a79f-8f0ee0a304dc"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o número 1 \n",
+            "10\n",
+            "Digite o número 2 \n",
+            "2\n",
+            "A soma dos números é 12.00\n",
+            "A subtração dos números é 8.00\n",
+            "A multiplicação dos números é 20.00\n",
+            "A divisão dos números é 5.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "\n",
+        "n=float(input('Digite um número \\n'))\n",
+        "\n",
+        "print(f'O número ao quadrado é {n**2:.2f}') #potencia\n",
+        "print(f'O número ao cubo é {pow(n,3):.2f}') #cubo\n",
+        "print(f'A raiz quadrada é {math.sqrt(n):.2f}') #raiz quadrada"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9enlWZZOWZ5s",
+        "outputId": "416d5159-631b-41f4-e139-fde816ede8cf"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número \n",
+            "2\n",
+            "O número ao quadrado é 4.00\n",
+            "O número ao cubo é 8.00\n",
+            "A raiz quadrada é 1.41\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=float(input('Digite um número \\n'))\n",
+        "\n",
+        "if n>=0:\n",
+        "  print('O número é positivo\\n')\n",
+        "else:\n",
+        "  print('o número é negativo\\n')\n",
+        "  "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6cSN0T5pYn11",
+        "outputId": "81b95658-28bd-4d81-aeac-b5009898f7c2"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número \n",
+            "-45\n",
+            "o número é negativo\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=float(input('Digite o lado a '))\n",
+        "b=float(input('Digite o lado b '))\n",
+        "c=float(input('Digite o lado c '))\n",
+        "\n",
+        "if a==b and b==c:\n",
+        "  print('\\nTriângulo Equilátero\\n')\n",
+        "elif a==b or b==c or c==a:\n",
+        "  print('\\nTriângulo Isóceles\\n')\n",
+        "else:\n",
+        "  print('\\nTriângulo Escaleno\\n')\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2mZ2TyYnab73",
+        "outputId": "38082d89-0b1e-4157-c85e-2d1e3af34344"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o lado a 2\n",
+            "Digite o lado b 2\n",
+            "Digite o lado c 2\n",
+            "\n",
+            "Triângulo Equilátero\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(10):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "537kUOwRcpOn",
+        "outputId": "cdb03635-ec25-4d14-b7c7-54970de3fc8b"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(10):\n",
+        "  print(i,end=' ')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6oxj62BNeh5I",
+        "outputId": "96c5ea64-151b-4fbf-b004-80b1d7199803"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 1 2 3 4 5 6 7 8 9 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(2,11):  # ele vai começar no número 2 e terminar no 10\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8AFeo_-Se2PM",
+        "outputId": "7d8d256f-67f6-44ef-b52c-b9eb5b67eb4d"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(10,0,-1):  #imprimiu em decresente de 10 até 1\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "agh0F9zQfUPp",
+        "outputId": "716f15e5-290a-445c-bc67-4409f1a36af8"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "9\n",
+            "8\n",
+            "7\n",
+            "6\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input('Qual tabuada você de deseja fazer?\\n'))\n",
+        "\n",
+        "print('*************Tabuada*************')\n",
+        "for i in range(11):\n",
+        "  print(f'{n} x {i} = {n*i}')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iOYj-VJufnwR",
+        "outputId": "a6560ec1-3a87-4e52-9b72-ed827e96c719"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Qual tabuada você de deseja fazer?\n",
+            "2\n",
+            "*************Tabuada*************\n",
+            "2 x 0 = 0\n",
+            "2 x 1 = 2\n",
+            "2 x 2 = 4\n",
+            "2 x 3 = 6\n",
+            "2 x 4 = 8\n",
+            "2 x 5 = 10\n",
+            "2 x 6 = 12\n",
+            "2 x 7 = 14\n",
+            "2 x 8 = 16\n",
+            "2 x 9 = 18\n",
+            "2 x 10 = 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cont =0\n",
+        "acum=0\n",
+        "n=int(input('Quantas pessoas compraram o produto X?\\n'))\n",
+        "\n",
+        "for i in range(n):\n",
+        "  preco=float(input('Digite o preço do produto X\\n'))\n",
+        "  acum+=preco\n",
+        "\n",
+        "  if preco>80:\n",
+        "    cont+=1    #cont = cont + 1\n",
+        "  \n",
+        "media=acum/5\n",
+        "print(f'\\nO valor médio é {media:.2f}\\n')\n",
+        "print(f'{cont} pessoas pagaram a mais de R$80,00 no produto X\\n ')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EoLI79OAg5bG",
+        "outputId": "3d7b32e9-8bf0-4ee5-8aa2-9ca0ac85a5b7"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Quantas pessoas compraram o produto X?\n",
+            "3\n",
+            "Digite o preço do produto X\n",
+            "200\n",
+            "Digite o preço do produto X\n",
+            "100\n",
+            "Digite o preço do produto X\n",
+            "20\n",
+            "\n",
+            "O valor médio é 64.00\n",
+            "\n",
+            "2 pessoas pagaram a mais de R$80,00 no produto X\n",
+            " \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i=0\n",
+        "\n",
+        "while i<=3:\n",
+        "  sal=float(input('Digite seu salário\\n'))\n",
+        "\n",
+        "  if sal<1000:\n",
+        "    print(f'Novo salário é R$ {sal*1.30:.2f}')\n",
+        "  else:\n",
+        "    print('\\nVocê não tem direito a aumento\\n')   \n",
+        "    \n",
+        "  i+=1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oEOyTHzOjP41",
+        "outputId": "a0531844-0ff2-47ae-9a63-daea50530622"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite seu salário\n",
+            "2000\n",
+            "\n",
+            "Você não tem direito a aumento\n",
+            "\n",
+            "Digite seu salário\n",
+            "900\n",
+            "Novo salário é R$ 1170.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "dr7HXcgpmP5Y"
+      }
+    }
+  ]
+}
